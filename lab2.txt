@@ -1,0 +1,14 @@
+1. Use socket.socket.AF_INET
+
+2. A server socket is created to bind to a port and listen for a connect from a client.
+A client socket is created to connect to a listen server
+
+REF: https://www.quora.com/What-is-the-difference-between-client-socket-and-server-socket-in-computer-networking
+
+3. socket.SO_REUSEADDR tells the kernel to reuse the local socket
+
+4. We get the host ip address and the port number
+
+5. After it finishes sending the HTTP request, it will return 0 bytes signifying that the other side has ended the connection
+
+6. https://github.com/DylanAlcock/cmput404-lab2
